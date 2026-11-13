@@ -1,0 +1,7 @@
+{
+  "appId": "local.iptv.platform",
+  "appName": "IPTV Local",
+  "webDir": "../frontend/dist",
+  "server": { "androidScheme": "http", "cleartext": true },
+  "android": { "allowMixedContent": true }
+}

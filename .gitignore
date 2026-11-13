@@ -1,0 +1,33 @@
+# Environment and credentials
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Node and generated web assets
+node_modules/
+frontend/dist/
+
+# Android and Gradle generated files
+.gradle/
+**/.gradle/
+**/build/
+android-wrapper/android/local.properties
+android-wrapper/android/app/src/main/assets/public/
+android-wrapper/android/app/src/main/assets/capacitor.config.json
+android-wrapper/android/app/src/main/assets/capacitor.plugins.json
+android-wrapper/android/capacitor-cordova-android-plugins/
+
+# Local database and playlist content; keep only the harmless demo stream.
+backend/data/*.db
+backend/data/*.sqlite*
+backend/data/*.m3u
+backend/data/*.m3u8
+!backend/data/sample.m3u

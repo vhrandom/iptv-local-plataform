@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IPTV Local</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <div id="player" class="player" hidden></div>
+  <dialog id="setup">
+    <form method="dialog" id="setupForm">
+      <h2>Conectar al servidor</h2>
+      <p>Escribe la dirección del servidor en tu red, por ejemplo http://192.168.1.50:8000</p>
+      <input id="serverInput" data-focus type="url" placeholder="http://192.168.1.50:8000" required>
+      <button data-focus class="btn primary">Conectar</button>
+    </form>
+  </dialog>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
